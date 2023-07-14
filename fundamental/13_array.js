@@ -7,7 +7,7 @@ console.log(typeof(firstname));
 console.log(firstname[0]);
 console.log(firstname[2],firstname[3]);
 
-firstname[1]="Jenny";
+firstname[1]="Jenny"; 
 console.log(firstname);
 
 firstname[3]="Jepp";
