@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .setbg {
+        background-color: aqua;
+        color: brown;
+        font-size: 24px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Basic JQuery</h1>
+    <p id="p1">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet tempora,
+      illo officiis quod corrupti perspiciatis facere deserunt adipisci pariatur
+      repellendus alias vel earum deleniti totam autem. Iusto, modi! Ipsam,
+      natus!
+    </p>
+    <p class="p2">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi impedit
+      velit laboriosam quisquam dolorum hic repellendus quidem commodi neque
+      magni natus enim, laborum architecto nulla doloribus eum nobis harum
+      laudantium!
+    </p>
+    <article>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio ad rem
+      placeat. Odit animi excepturi, dicta esse dolor quam reprehenderit,
+      veritatis dolorum temporibus, ab doloribus fuga quod natus omnis ea!
+    </article>
+    <script src="jquery-3.7.0.min.js"></script>
+    <script>
+      $(function () {
+        //alert("OK");
+        // tag h1
+        $("h1").css("color", "red");
+        // tag p id = p1
+        $("#p1").css("background-color", "yellow");
+        // tag p class = p2
+        $(".p2").css("background-color", "green").css("color", "white");
+        //css
+        $("article").addClass("setbg"); 
+        $("article").removeClass("setbg");
+        // สลับ add กับ remove
+        $("article").toggleClass("setbg");
+      });
+    </script>
+  </body>
+</html>
