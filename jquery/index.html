@@ -1,9 +1,8 @@
-<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Basic Jquery</title>
     <style>
       .setbg {
         background-color: aqua;
@@ -15,36 +14,46 @@
   <body>
     <h1>Basic JQuery</h1>
     <p id="p1">
-      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet tempora,
-      illo officiis quod corrupti perspiciatis facere deserunt adipisci pariatur
-      repellendus alias vel earum deleniti totam autem. Iusto, modi! Ipsam,
-      natus!
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti fugit
+      iste asperiores voluptate iusto voluptas, accusamus veritatis nulla
+      praesentium ducimus deserunt sint voluptatum laboriosam fuga maiores! Ea
+      praesentium voluptatum totam.
     </p>
     <p class="p2">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi impedit
-      velit laboriosam quisquam dolorum hic repellendus quidem commodi neque
-      magni natus enim, laborum architecto nulla doloribus eum nobis harum
-      laudantium!
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor error
+      pariatur voluptates hic earum, velit dolore numquam corporis laborum optio
+      iste quasi quas recusandae ullam architecto cumque voluptatum repudiandae
+      culpa.
     </p>
+    <span class="p2"
+      >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor error
+      pariatur voluptates hic earum, velit dolore numquam corporis laborum optio
+      iste quasi quas recusandae ullam architecto cumque voluptatum repudiandae
+      culpa.</span
+    >
     <article>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio ad rem
-      placeat. Odit animi excepturi, dicta esse dolor quam reprehenderit,
-      veritatis dolorum temporibus, ab doloribus fuga quod natus omnis ea!
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt sed
+      molestiae necessitatibus. Nulla, deserunt illo perferendis excepturi error
+      iusto ipsum asperiores maxime, id soluta nesciunt sint obcaecati autem
+      dolorem adipisci.
     </article>
+
     <script src="jquery-3.7.0.min.js"></script>
     <script>
       $(function () {
-        //alert("OK");
-        // tag h1
+        // alert("OK")
+        // การเข้าถึง tag h1
         $("h1").css("color", "red");
-        // tag p id = p1
-        $("#p1").css("background-color", "yellow");
-        // tag p class = p2
-        $(".p2").css("background-color", "green").css("color", "white");
-        //css
-        $("article").addClass("setbg"); 
+        // เข้าถึง tag p ที่มี id=p1
+        $("p#p1").css("background-color", "yellow");
+        // เข้าถึงถึง p ที่เป็น class p2
+        $("p.p2").css("background-color", "pink");
+        $("span.p2").css("background-color", "green");
+        // การเรียกใช้ class css
+        $("article").addClass("setbg");
+        // การลบ class css ออก
         $("article").removeClass("setbg");
-        // สลับ add กับ remove
+        // การสลับการทำงาน ระหว่าง add class กับ remove class
         $("article").toggleClass("setbg");
       });
     </script>
